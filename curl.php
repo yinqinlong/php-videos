@@ -2,7 +2,7 @@
 /**
  * curl curl类
  * 
- * @author yinqinlong <qinlong@qinlong@staff.sina.com.cn> 
+ * @author yinqinlong <yinqinlong52@163.com> 
  */
 class curl {
 	public function curlGet($URL) {

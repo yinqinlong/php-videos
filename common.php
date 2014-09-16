@@ -3,7 +3,7 @@
  * Common 提供一般方法
  * 
  * @date 2014-7-14 15:40:28
- * @author yinqinlong <qinlong@staff.sina.com.cn> 
+ * @author yinqinlong <yinqinlong52@163.com> 
  */
 class Common {
 	public static $relation = array(

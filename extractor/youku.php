@@ -4,7 +4,7 @@
  * 
  * @uses website
  * @copyright 2014年07月25日 星期五 10时52分19秒 the video group
- * @author 尹秦龙<qinlong@staff.sina.com.cn> 
+ * @author 尹秦龙<yinqinlong52@163.com> 
  */
 class youku extends website {
 	protected $patterns = array(
