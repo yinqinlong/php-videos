@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sinavideo_web/!svn/ver/28864/apps/branches/public/vms/resource/scripts/modules
+END
+main.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sinavideo_web/!svn/ver/28716/apps/branches/public/vms/resource/scripts/modules/main.js
+END
+privilege.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sinavideo_web/!svn/ver/22631/apps/branches/public/vms/resource/scripts/modules/privilege.js
+END
+video.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sinavideo_web/!svn/ver/28672/apps/branches/public/vms/resource/scripts/modules/video.js
+END
+login.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sinavideo_web/!svn/ver/22280/apps/branches/public/vms/resource/scripts/modules/login.js
+END
+account.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sinavideo_web/!svn/ver/22441/apps/branches/public/vms/resource/scripts/modules/account.js
+END
+mq.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sinavideo_web/!svn/ver/28855/apps/branches/public/vms/resource/scripts/modules/mq.js
+END
+role.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sinavideo_web/!svn/ver/28513/apps/branches/public/vms/resource/scripts/modules/role.js
+END
+department.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sinavideo_web/!svn/ver/22704/apps/branches/public/vms/resource/scripts/modules/department.js
+END

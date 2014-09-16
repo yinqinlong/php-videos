@@ -1,0 +1,142 @@
+/*!
+ * An extension of Twitter's Bootstrap
+ */
+
+.text-aqua {
+  color: #00FFFF;
+}
+.text-blue {
+  color: #0000FF;
+}
+.text-fuchsia {
+  color: #FF00FF;
+}
+.text-gray {
+  color: #808080;
+}
+.text-green {
+  color: #008000;
+}
+.text-lime {
+  color: #00FF00;
+}
+.text-maroon {
+  color: #800000;
+}
+.text-navy {
+  color: #000080;
+}
+.text-olive {
+  color: #808000;
+}
+.text-orange {
+  color: #FFA500;
+}
+.text-purple {
+  color: #800080;
+}
+.text-red {
+  color: #FF0000;
+}
+.text-silver {
+  color: #C0C0C0;
+}
+.text-teal {
+  color: #008080;
+}
+.text-yellow {
+  color: #FFFF00;
+}
+.bg-aqua {
+  background-color: #00FFFF;
+}
+.bg-blue {
+  background-color: #0000FF;
+}
+.bg-fuchsia {
+  background-color: #FF00FF;
+}
+.bg-gray {
+  background-color: #808080;
+}
+.bg-green {
+  background-color: #008000;
+}
+.bg-lime {
+  background-color: #00FF00;
+}
+.bg-maroon {
+  background-color: #800000;
+}
+.bg-navy {
+  background-color: #000080;
+}
+.bg-olive {
+  background-color: #808000;
+}
+.bg-orange {
+  background-color: #FFA500;
+}
+.bg-purple {
+  background-color: #800080;
+}
+.bg-red {
+  background-color: #FF0000;
+}
+.bg-silver {
+  background-color: #C0C0C0;
+}
+.bg-teal {
+  background-color: #008080;
+}
+.bg-yellow {
+  background-color: #FFFF00;
+}
+.label-aqua {
+  background-color: #00FFFF;
+}
+.label-blue {
+  background-color: #0000FF;
+}
+.label-fuchsia {
+  background-color: #FF00FF;
+}
+.label-gray {
+  background-color: #808080;
+}
+.label-green {
+  background-color: #008000;
+}
+.label-lime {
+  background-color: #00FF00;
+}
+.label-maroon {
+  background-color: #800000;
+}
+.label-navy {
+  background-color: #000080;
+}
+.label-olive {
+  background-color: #808000;
+}
+.label-orange {
+  background-color: #FFA500;
+}
+.label-purple {
+  background-color: #800080;
+}
+.label-red {
+  background-color: #FF0000;
+}
+.label-silver {
+  background-color: #C0C0C0;
+}
+.label-teal {
+  background-color: #008080;
+}
+.label-yellow {
+  background-color: #FFFF00;
+}
+.show-grid {
+  margin-bottom: 15px;
+}

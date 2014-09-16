@@ -1,0 +1,78 @@
+var Form = {
+
+	//index : '/index.php',
+	index : '', 
+
+	messageBox : '#ServerMessageBox',
+
+	submit : function(element, callback) {
+		$(Form.messageBox).hide();
+		$(element).ajaxSubmit({
+			success	: Form.response,  // post-submit callback 
+			dataType : null,				// 'xml', 'script', or 'json' (expected server response type)
+			timeout : 3000,
+			complete: callback
+			//target : Form.messageBox,   	// target element(s) to be updated with server response 
+			//url : $(this).action,			// override for form's 'action' attribute 
+			//type : 'post',				// 'get' or 'post', override for form's 'method' attribute 
+			//clearForm: true				// clear all form fields after successful submit 
+			//resetForm: true				// reset the form after successful submit 
+		}); 
+		return false; 
+	},
+
+	response : function(response, status) {
+		if(status !== 'success') {
+			$(Form.messageBox).find('h4').html('操作失败');
+			return false;
+		}
+
+		response = eval('('+ response +')');
+
+		if(response.code == 0) {
+			Form.failed(response.messages, response.data, response.redirect);
+		}
+
+		if(response.code == 1) {
+			Form.success(response.messages, response.data, response.redirect);
+		}
+	},
+	
+	success : function(messages, data, redirect) {
+		redirect = Form.index +'/'+ redirect;
+
+		var HTML = '<div class="error_ex">'
+				+'<h2>'+ messages +'</h2>'
+				+'<p>3秒后跳转至 '+ redirect +'</p>'
+				+'<a class="btn btn-warning btn-big" href="'+ redirect +'"> 立即跳转… </a>'
+				+'</div>';
+		
+		if(typeof(parent.$.fancybox) != 'undefined') {
+			//setTimeout('(function(uri) {parent.$.fancybox.close()})()', 3000);
+			parent.$.fancybox.close();
+		} else {
+			Mask.show(HTML);
+			setTimeout('(function(uri) {Mask.close();location.href = uri;})("'+ redirect +'")', 3000);
+		}
+	},
+
+	//	Warning: 'alert alert-block';
+	//	Error: 'alert alert-error alert-block';
+	//	Info: 'alert alert-info alert-block';
+	//	Success: 'alert alert-success alert-block';
+	failed : function(messages, data, redirect) {
+		$(Form.messageBox).html('');
+
+		$(Form.messageBox).removeClass('hide');
+		$(Form.messageBox).addClass('alert alert-danger alert-dismissable');
+		$(Form.messageBox).append('<a class="close" href="#" onclick="$(this).parent().hide();">×</a>');
+		$(Form.messageBox).append('<h4 class="alert-heading">Error!</h4>');
+
+		var ul = $('<ul></ul>');
+		for(var i = 0; i < messages.length; i++) {
+			ul.append('<li>'+ messages[i] +'</li>');
+		}
+		$(Form.messageBox).append(ul);
+		$(Form.messageBox).show();
+	}
+};

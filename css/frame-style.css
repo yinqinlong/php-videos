@@ -1,0 +1,98 @@
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  color:#666;
+}
+
+/*
+ * Navbar
+ */
+.navbar {
+  background: #1F262D;
+}
+.navbar-brand {
+  width: 220px;
+  background: url("../images/logo.png") no-repeat scroll center transparent;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  top: 51px;
+  background-color: #2E363F;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-bottom: 20px;
+}
+.nav-sidebar > li > a {
+  color: #999;
+}
+.nav-sidebar > li > a:hover, .nav-sidebar > li.open > a {
+  color: #fff;
+  background-color: #428bca;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color:#428BCA;
+}
+.nav-sidebar > li > ul {
+  padding-left: 30px;
+}
+.nav-sidebar > li > ul > li {
+  list-style: none;
+  margin: 10px 0 10px 0;
+}
+.nav-sidebar > li > ul > li > a {
+  color: #999;
+}
+.nav-sidebar > li > ul > li > a:hover, .nav-sidebar li > ul > li.open > a {
+  color: #fff;
+}
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.hide-sidebar, .show-sidebar {
+  cursor: pointer;
+}
+
+/*
+ * Main content
+ */
+.main {
+  top: 51px;
+}
+@media (min-width: 768px) {
+  .main {
+    left: 150px;
+    width: calc(100% - 150px);
+  }
+}
+
+.main-full {
+  top: 51px;
+}
